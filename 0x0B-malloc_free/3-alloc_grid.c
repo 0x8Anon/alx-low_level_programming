@@ -15,7 +15,7 @@ if (width <= 0 || height <= 0)
 {
 return NULL;
 }
-**grid = (int **)malloc(height * sizeof(int *));
+grid = (int **)malloc(height * sizeof(int *));
 if (grid == NULL)
 {
 return NULL;
@@ -26,7 +26,6 @@ if (grid[i] == NULL)
 for (j = 0; j < i; j++)
 {
 free(grid[j]);
-
 }	
 free(grid);
 return NULL;
