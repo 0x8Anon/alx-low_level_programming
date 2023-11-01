@@ -1,8 +1,8 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * create_array: deez
- * Description : gets value and returns stuff with malloc
+ * create_array - deez
+ * Description: gets value and returns stuff with malloc
  * Return: array
  * @size: deez tbh
  * @c : deez
