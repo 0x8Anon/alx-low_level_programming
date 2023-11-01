@@ -1,5 +1,7 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <stdlib.h>
+#include <stddef.h>
 /**
  * _strdup - main function
  * Description: returns pointer to new space
@@ -13,19 +15,23 @@ char *_strdup(char *str)
 int length = 0;
 int i;
 char *new_string;
-
 if (str == NULL)
 {
 return (NULL);
 }
 while (str[length] != '\0')
 {
-return (length++);
+length++;
 }
-*new_string = (char *)malloc(length + 1);
-for (int i = 0; i <= length; i++)
+new_string = (char *)malloc(length + 1);
+if (new_string == NULL)
 {
-duplicate[i] = str[i];
+return (NULL);
 }
+for (i = 0; i < length; i++)
+{
+new_string[i] = str[i];
+}
+new_string[i] = '\0';
 return (new_string);
 }
