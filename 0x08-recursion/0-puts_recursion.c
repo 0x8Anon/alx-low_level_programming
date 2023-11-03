@@ -1,21 +1,23 @@
 #include "main.h"
-
+#include <stdio.h>
+#include <string.h>
 /**
- * main - check the code
+ * _puts_recursion - Entry point
+ * Description: recursion
+ *@s: read in
  *
- * Return: Always 0.
  */
 
 void _puts_recursion(char *s)
 {
-    if (*s != '\0')
-	{
-		_putchar(*s);
-		_puts_recursion(++s);
-	}
-	else
-	{
-		_putchar('\n');
-	}
+if (*s != '\0')
+{
+_putchar(*s);
+puts(++s);
+}
+else
+{
+_putchar('\n');
+}
 
 }
