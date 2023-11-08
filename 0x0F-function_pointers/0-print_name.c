@@ -5,10 +5,7 @@
  * @f: read in
  * @name: being printed
  */
-
 void print_name(char *name, void (*f)(char *))
 {
-
 f(name);
-
 }
